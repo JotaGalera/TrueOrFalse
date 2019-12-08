@@ -9,7 +9,8 @@
 import UIKit
 
 class SetupGameTableViewController : UITableViewController {
-    
+    let TITLEFIRTSECTION = "Choose the difficult mode:"
+    let HEADERHEIGHTSIZE : CGFloat = 50
     let game : Game = Game()
     let router = Router()
     
@@ -22,7 +23,12 @@ class SetupGameTableViewController : UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return "Choose the difficult mode:"
+        setSizeHeaderInSection(textSize: HEADERHEIGHTSIZE)
+        return TITLEFIRTSECTION
+    }
+    
+    func setSizeHeaderInSection(textSize: CGFloat){
+        tableView.sectionHeaderHeight = textSize
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
