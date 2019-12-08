@@ -51,7 +51,7 @@ class GameModeImp : GameMode {
     }
     
     private func setupAnotherRandomSentences(){
-        while(arrayDifferentPossibilitiesSentences.count != 4){
+        while(arrayDifferentPossibilitiesSentences.count < 4){
             var numberRandom : Int
             repeat {
                 numberRandom = Int.random(in: 0..<arrayCharacter.count)

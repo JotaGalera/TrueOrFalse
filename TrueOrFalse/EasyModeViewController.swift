@@ -28,6 +28,17 @@ class EasyModeViewController : UIViewController {
     
     func startEasyGame(){
         game.setGameMode()
+        setupImageTarget()
+        setupButtonsWithOption()
+    }
+    
+    func setupImageTarget(){
+        let namePhoto = game.getImageTarget()
+        let photo = UIImage(named: namePhoto)
+        imageTarget.image = photo
+    }
+    
+    func setupButtonsWithOption(){
         let optionsForPlaying = game.getOptionsForPlaying() as? OptionsForPlayingEasyModeImp
         let arraySentences = optionsForPlaying?.getArrayDifferentsPossibilities()
         
@@ -42,26 +53,6 @@ class EasyModeViewController : UIViewController {
         
         guard let tipicalTarjetSentenceFourthOption = arraySentences?[3] else {return}
         optionFourButton.setTitle(tipicalTarjetSentenceFourthOption, for: .normal)
-//        let arrayCharacter = arrayCharacterFactory.make()
-//        let targetNumberRandom = Int.random(in: 0..<arrayCharacter.count)
-//        let num_random2 = Int.random(in: 0..<arrayCharacter.count)
-//
-//
-//
-
-//
-//        let tipicalTarjetSentenceThirdOption = arrayCharacter[num_random2].getRandomSentence()
-//        optionThreeButton.setTitle(tipicalTarjetSentenceThirdOption, for: .normal)
-//
-//        let tipicalTarjetSentenceFourthOption = arrayCharacter[num_random2].getRandomSentence()
-//        optionFourButton.setTitle(tipicalTarjetSentenceFourthOption, for: .normal)
-
-    }
-    
-    func setupImageTarget(targetNumberRandom: Int){
-//        let namePhoto = arrayCharacter[targetNumberRandom].getImageName()
-//        let photo = UIImage(named: namePhoto)
-//        imageTarget.image = photo
     }
     
     @IBAction func playerChooseFirstOption(_ sender: Any) {

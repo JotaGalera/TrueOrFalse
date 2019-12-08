@@ -8,13 +8,18 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class ViewController: UIViewController {    
+    @IBOutlet weak var toolBar: UIToolbar!
+    @IBOutlet weak var imageToolBar: UIBarButtonItem!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        putIconBSInToolbar()
     }
 
-
+    func putIconBSInToolbar(){
+        let iconBS = UIImage(named: "imagesApp/BSicon.png")?.withRenderingMode(.alwaysOriginal)
+        imageToolBar.image = iconBS
+    }
 }
 

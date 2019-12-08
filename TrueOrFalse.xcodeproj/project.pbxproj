@@ -20,10 +20,10 @@
 		89243A82238F07FF000DEB85 /* EasyModeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89243A81238F07FF000DEB85 /* EasyModeViewController.swift */; };
 		89243A86238F1296000DEB85 /* teamMobilePhotos in Resources */ = {isa = PBXBuildFile; fileRef = 89243A85238F1296000DEB85 /* teamMobilePhotos */; };
 		89283DA9238AF92A00B0795D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 89283DA8238AF92A00B0795D /* Default-568h@2x.png */; };
-		89418275238DA21400A50B09 /* StartGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89418274238DA21400A50B09 /* StartGameViewController.swift */; };
 		89418279238DADF200A50B09 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89418278238DADF200A50B09 /* Character.swift */; };
 		89462E58238DC28C0029517F /* ArrayCharacterFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89462E57238DC28C0029517F /* ArrayCharacterFactory.swift */; };
 		89462E5A238DC2AB0029517F /* ArrayCharacterFactoryImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89462E59238DC2AB0029517F /* ArrayCharacterFactoryImp.swift */; };
+		895E2E1A239BDD0700B90803 /* imagesApp in Resources */ = {isa = PBXBuildFile; fileRef = 895E2E19239BDD0700B90803 /* imagesApp */; };
 		89B2268C2392F420004453EA /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B2268B2392F420004453EA /* Alert.swift */; };
 		89B2268E2392F45C004453EA /* AlertImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B2268D2392F45C004453EA /* AlertImp.swift */; };
 		89B2269023930436004453EA /* GameMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B2268F23930436004453EA /* GameMode.swift */; };
@@ -49,10 +49,10 @@
 		89243A81238F07FF000DEB85 /* EasyModeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyModeViewController.swift; sourceTree = "<group>"; };
 		89243A85238F1296000DEB85 /* teamMobilePhotos */ = {isa = PBXFileReference; lastKnownFileType = folder; path = teamMobilePhotos; sourceTree = "<group>"; };
 		89283DA8238AF92A00B0795D /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		89418274238DA21400A50B09 /* StartGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartGameViewController.swift; sourceTree = "<group>"; };
 		89418278238DADF200A50B09 /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 		89462E57238DC28C0029517F /* ArrayCharacterFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayCharacterFactory.swift; sourceTree = "<group>"; };
 		89462E59238DC2AB0029517F /* ArrayCharacterFactoryImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayCharacterFactoryImp.swift; sourceTree = "<group>"; };
+		895E2E19239BDD0700B90803 /* imagesApp */ = {isa = PBXFileReference; lastKnownFileType = folder; path = imagesApp; sourceTree = "<group>"; };
 		89B2268B2392F420004453EA /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		89B2268D2392F45C004453EA /* AlertImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertImp.swift; sourceTree = "<group>"; };
 		89B2268F23930436004453EA /* GameMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameMode.swift; sourceTree = "<group>"; };
@@ -76,6 +76,7 @@
 		8922A42E238AB22B00142FAB = {
 			isa = PBXGroup;
 			children = (
+				895E2E19239BDD0700B90803 /* imagesApp */,
 				89243A85238F1296000DEB85 /* teamMobilePhotos */,
 				89283DA8238AF92A00B0795D /* Default-568h@2x.png */,
 				8922A439238AB22B00142FAB /* TrueOrFalse */,
@@ -98,14 +99,13 @@
 				8922A43A238AB22B00142FAB /* AppDelegate.swift */,
 				8922A43C238AB22B00142FAB /* SceneDelegate.swift */,
 				8922A43E238AB22B00142FAB /* ViewController.swift */,
-				8922A440238AB22B00142FAB /* Main.storyboard */,
-				8922A443238AB22D00142FAB /* Assets.xcassets */,
-				8922A445238AB22D00142FAB /* LaunchScreen.storyboard */,
-				8922A448238AB22D00142FAB /* Info.plist */,
 				890FB128238AFABE004286BF /* SetupGameTableViewController.swift */,
-				89418274238DA21400A50B09 /* StartGameViewController.swift */,
-				89243A7F238F076F000DEB85 /* EasyMode.storyboard */,
+				8922A440238AB22B00142FAB /* Main.storyboard */,
 				89243A81238F07FF000DEB85 /* EasyModeViewController.swift */,
+				89243A7F238F076F000DEB85 /* EasyMode.storyboard */,
+				8922A445238AB22D00142FAB /* LaunchScreen.storyboard */,
+				8922A443238AB22D00142FAB /* Assets.xcassets */,
+				8922A448238AB22D00142FAB /* Info.plist */,
 			);
 			path = TrueOrFalse;
 			sourceTree = "<group>";
@@ -191,6 +191,7 @@
 				89243A80238F076F000DEB85 /* EasyMode.storyboard in Resources */,
 				8922A447238AB22D00142FAB /* LaunchScreen.storyboard in Resources */,
 				89283DA9238AF92A00B0795D /* Default-568h@2x.png in Resources */,
+				895E2E1A239BDD0700B90803 /* imagesApp in Resources */,
 				8922A444238AB22D00142FAB /* Assets.xcassets in Resources */,
 				8922A442238AB22B00142FAB /* Main.storyboard in Resources */,
 			);
@@ -220,7 +221,6 @@
 				89B2269823944BD3004453EA /* OptionsForPlayingEasyModeImp.swift in Sources */,
 				89462E58238DC28C0029517F /* ArrayCharacterFactory.swift in Sources */,
 				89B2269223930453004453EA /* GameModeImp.swift in Sources */,
-				89418275238DA21400A50B09 /* StartGameViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
