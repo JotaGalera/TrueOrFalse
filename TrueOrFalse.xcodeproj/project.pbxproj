@@ -95,14 +95,10 @@
 		8922A439238AB22B00142FAB /* TrueOrFalse */ = {
 			isa = PBXGroup;
 			children = (
-				89462E56238DC2520029517F /* Classes */,
+				8962711223B1668F00320DCC /* Domain */,
+				8962711123B1666900320DCC /* View */,
 				8922A43A238AB22B00142FAB /* AppDelegate.swift */,
 				8922A43C238AB22B00142FAB /* SceneDelegate.swift */,
-				8922A43E238AB22B00142FAB /* ViewController.swift */,
-				890FB128238AFABE004286BF /* SetupGameTableViewController.swift */,
-				8922A440238AB22B00142FAB /* Main.storyboard */,
-				89243A81238F07FF000DEB85 /* EasyModeViewController.swift */,
-				89243A7F238F076F000DEB85 /* EasyMode.storyboard */,
 				8922A445238AB22D00142FAB /* LaunchScreen.storyboard */,
 				8922A443238AB22D00142FAB /* Assets.xcassets */,
 				8922A448238AB22D00142FAB /* Info.plist */,
@@ -127,6 +123,26 @@
 				89B2269723944BD3004453EA /* OptionsForPlayingEasyModeImp.swift */,
 			);
 			path = Classes;
+			sourceTree = "<group>";
+		};
+		8962711123B1666900320DCC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8922A43E238AB22B00142FAB /* ViewController.swift */,
+				890FB128238AFABE004286BF /* SetupGameTableViewController.swift */,
+				8922A440238AB22B00142FAB /* Main.storyboard */,
+				89243A81238F07FF000DEB85 /* EasyModeViewController.swift */,
+				89243A7F238F076F000DEB85 /* EasyMode.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8962711223B1668F00320DCC /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				89462E56238DC2520029517F /* Classes */,
+			);
+			path = Domain;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
