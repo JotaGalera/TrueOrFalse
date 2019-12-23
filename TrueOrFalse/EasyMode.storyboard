@@ -15,35 +15,67 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pqa-xy-l2l">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pqa-xy-l2l">
                                 <rect key="frame" x="87" y="208" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="hPU-NO-wof"/>
+                                </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dio-bN-QsF">
-                                <rect key="frame" x="20" y="496" width="374" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K2e-iN-auu">
+                                <rect key="frame" x="173.5" y="573" width="67" height="37"/>
+                                <fontDescription key="fontDescription" name="ArialHebrew" family="Arial Hebrew" pointSize="23"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="playerChooseSecondOption:" destination="y2Q-nZ-QCw" eventType="touchUpInside" id="IO1-9f-Y2l"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZsH-71-1y5">
+                                <rect key="frame" x="173.5" y="720" width="67" height="37"/>
+                                <fontDescription key="fontDescription" name="ArialHebrew" family="Arial Hebrew" pointSize="23"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="playerChooseFourthOption:" destination="y2Q-nZ-QCw" eventType="touchUpInside" id="uhx-1O-ADk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZPn-0x-BIm">
+                                <rect key="frame" x="173.5" y="645" width="67" height="37"/>
+                                <fontDescription key="fontDescription" name="ArialHebrew" family="Arial Hebrew" pointSize="23"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="playerChooseThirdOption:" destination="y2Q-nZ-QCw" eventType="touchUpInside" id="vmQ-EN-Xel"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dio-bN-QsF">
+                                <rect key="frame" x="173.5" y="502" width="67" height="37"/>
+                                <fontDescription key="fontDescription" name="ArialHebrew" family="Arial Hebrew" pointSize="23"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
                                 <connections>
                                     <action selector="playerChooseFirstOption:" destination="y2Q-nZ-QCw" eventType="touchUpInside" id="dPb-mq-HCt"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K2e-iN-auu">
-                                <rect key="frame" x="20" y="534" width="374" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZsH-71-1y5">
-                                <rect key="frame" x="20" y="610" width="374" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZPn-0x-BIm">
-                                <rect key="frame" x="20" y="572" width="374" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="pqa-xy-l2l" firstAttribute="centerX" secondItem="dio-bN-QsF" secondAttribute="centerX" id="0t9-PJ-0qr"/>
+                            <constraint firstItem="pqa-xy-l2l" firstAttribute="centerX" secondItem="ZPn-0x-BIm" secondAttribute="centerX" id="PQK-M4-ywE"/>
+                            <constraint firstItem="pqa-xy-l2l" firstAttribute="centerX" secondItem="K2e-iN-auu" secondAttribute="centerX" id="YWs-UW-ipm"/>
+                            <constraint firstItem="dio-bN-QsF" firstAttribute="top" secondItem="pqa-xy-l2l" secondAttribute="bottom" constant="166" id="dQj-0k-bqh"/>
+                            <constraint firstItem="pqa-xy-l2l" firstAttribute="centerX" secondItem="ZsH-71-1y5" secondAttribute="centerX" id="ewe-EZ-Ypw"/>
+                            <constraint firstItem="K2e-iN-auu" firstAttribute="top" secondItem="dio-bN-QsF" secondAttribute="bottom" constant="34" id="nbU-ua-sg6"/>
+                            <constraint firstItem="pqa-xy-l2l" firstAttribute="top" secondItem="IsA-pP-oEc" secondAttribute="top" constant="164" id="pB4-01-YvC"/>
+                            <constraint firstItem="pqa-xy-l2l" firstAttribute="leading" secondItem="IsA-pP-oEc" secondAttribute="leading" constant="87" id="qF8-Y6-z04"/>
+                            <constraint firstItem="pqa-xy-l2l" firstAttribute="centerX" secondItem="2qa-e7-gvp" secondAttribute="centerX" id="tFq-0g-SLq"/>
+                            <constraint firstItem="ZPn-0x-BIm" firstAttribute="top" secondItem="K2e-iN-auu" secondAttribute="bottom" constant="35" id="z8o-UR-tqv"/>
+                            <constraint firstItem="ZsH-71-1y5" firstAttribute="top" secondItem="ZPn-0x-BIm" secondAttribute="bottom" constant="38" id="zay-3v-Otm"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="IsA-pP-oEc"/>
                     </view>
                     <navigationItem key="navigationItem" id="sHC-3E-cSq"/>

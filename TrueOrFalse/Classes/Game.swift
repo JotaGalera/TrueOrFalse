@@ -50,4 +50,11 @@ class Game {
     func getOptionsForPlaying()->OptionsForPlaying{
         return gameMode.getOptionsForPlaying()
     }
+    
+    func setSolution(solution : String){
+        gameMode.setSolutionPlayer(solution: solution)
+    }
+    func getSolution()->Bool{
+        return gameMode.getSolution()
+    }
 }

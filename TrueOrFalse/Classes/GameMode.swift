@@ -12,4 +12,6 @@ protocol GameMode{
     func setupEasyMode()
     func getTargetCharacter()->Character
     func getOptionsForPlaying()->OptionsForPlaying
+    func setSolutionPlayer(solution: String)
+    func getSolution()->Bool
 }

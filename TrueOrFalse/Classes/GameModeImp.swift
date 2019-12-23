@@ -13,18 +13,22 @@ class GameModeImp : GameMode {
     let arrayCharacter : [Character]
     var targetCharacter : Character
     var imageTargetCharacter : String
+    var sentenceTargetCharacter : String
     var optionsForPlayingEasy : OptionsForPlaying
     var arrayDifferentPossibilitiesSentences : [String]
     let numberRandomForChoosingTarget : Int
+    var userResponse : String
     
     init(){
         let arrayCharacterFactory = ArrayCharacterFactoryImp.init()
         arrayCharacter = arrayCharacterFactory.make()
         targetCharacter = Character()
         imageTargetCharacter = ""
+        sentenceTargetCharacter = ""
         optionsForPlayingEasy = OptionsForPlayingEasyModeImp.init(arrayDifferentsPossibilities: [])
         arrayDifferentPossibilitiesSentences = []
         numberRandomForChoosingTarget = Int.random(in: 0..<arrayCharacter.count)
+        userResponse = ""
     }
     
     func setupEasyMode(){
@@ -48,6 +52,7 @@ class GameModeImp : GameMode {
         let numberRandomForChoosingSentenceFromTarget = Int.random(in: 0..<arrayCharacter[numberRandomForChoosingTarget].arraySentences.count)
         let sentenceFromTarget = arrayCharacter[numberRandomForChoosingTarget].arraySentences[numberRandomForChoosingSentenceFromTarget]
         arrayDifferentPossibilitiesSentences.append(sentenceFromTarget)
+        sentenceTargetCharacter = sentenceFromTarget
     }
     
     private func setupAnotherRandomSentences(){
@@ -80,5 +85,21 @@ class GameModeImp : GameMode {
     
     func getOptionsForPlaying()->OptionsForPlaying{
         return self.optionsForPlayingEasy
+    }
+    
+    func userResponse(response: String){
+        self.userResponse = response
+    }
+    
+    func setSolutionPlayer(solution: String){
+        self.userResponse = solution
+    }
+    
+    func getSolution()->Bool{
+        if(self.userResponse == self.sentenceTargetCharacter){
+            return true
+        }else{
+            return false
+        }
     }
 }
